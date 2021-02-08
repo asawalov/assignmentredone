@@ -1,0 +1,43 @@
+{%  extends 'users/main.html' %}
+
+{% block content %}
+
+
+<br>
+
+
+	<div class="col">
+		<h5>All users</h5>
+		<hr>
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="createuserbyd">Create User</a>
+			<table class="table table-sm">
+				<tr>
+					<th>Phone no.</th>
+					<th>Name</th>
+					<th>Diseases</th>
+					<th>Address</th>
+					<th>Surgery</th>
+					<th>Update</th>
+					<th>Delete</th>
+				</tr>
+					{% for i in all%}
+				<tr>
+					<td> {{i.phone_no}} </td>
+					<td> {{i.name}} </td>
+					<td> {{i.diseases}} </td>
+					<td> {{i.address}} </td>
+					<td> {{i.surgery}} </td>
+					<td><a href = "updateuser/{{i.id}}">Update</a></td>
+					<td><a href = "deleteuser/{{i.id}}">Delete</a></td>
+
+				</tr>
+				{% endfor %}
+
+
+			</table>
+		</div>
+	</div>
+
+
+{% endblock %}
