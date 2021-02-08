@@ -8,4 +8,4 @@ Surgeon will have access to update feature in which they can only update the sur
 I was using dbsqlite before but now i have also changed that to postgres.
 After this i will be studying rest framework .
 
-Issues - I was not able to make things dynamic here as i have created seperarte functions of create for nurse/surgeon/doctor . I am exploring this things as of now.
+Issues - I was not able to make things dynamic here as i have created seperarte functions of create for nurse/surgeon/doctor . I am exploring this field also.
